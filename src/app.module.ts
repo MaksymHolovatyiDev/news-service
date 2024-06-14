@@ -11,7 +11,7 @@ import { DatabaseNamingStrategy } from './db/database-naming.strategy'
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL || 'postgresql://postgres:ITop1000MH@localhost:5432/internship_nestjs1',
+      url: process.env.DATABASE_URL || 'postgresql://postgres:postgres@db:5432/postgres',
       autoLoadEntities: true,
       synchronize: true,
       migrationsRun: false,
